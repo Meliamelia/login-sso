@@ -1,6 +1,6 @@
 <?php
 function getVerified($username, $password) {
-$conn=mysqli_connect('192.168.1.13','hbm','admin%%123','soap');
+$conn=mysqli_connect('192.168.1.5','username','password','databaseName');
 // Check connection
 if (mysqli_connect_errno())
   {
