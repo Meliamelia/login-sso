@@ -7,8 +7,8 @@ $name = explode('@',$username);
 $useracc = $name[0];
 $domain = '@'.$name[1];
 
-// koneksi ke server active directory  
-$ldapconn = ldap_connect($server,$port); 
+// membuat koneksi ke server active directory  
+$ldapconn = ldap_connect($server,$port); // jika gagal akan mereturn value FALSE  
 
   
 if ($ldapconn) {  
