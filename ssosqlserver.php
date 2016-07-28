@@ -2,7 +2,7 @@
 function getVerified($username, $password) {
 	//$symbol = "admin";
 	 $myServer = "192.168.1.11";
-	$connectInfo = array( "Database"=>"MobileIntelligence","UID"=>"sa","PWD"=>"admin%%123");
+	$connectInfo = array( "Database"=>"DatabaseName","UID"=>"user","PWD"=>"password");
 	$conn = sqlsrv_connect( $myServer, $connectInfo);
 	$passmd5 = md5($password);
 	//declare the SQL statement that will query the database
